@@ -1,0 +1,213 @@
+/* Menambahkan animasi latar belakang bergerak */
+.background-animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('Img/abstract-background.jpg') no-repeat center center;
+  background-size: cover;
+  opacity: 0.1;
+  animation: moveBackground 20s linear infinite;
+}
+
+@keyframes moveBackground {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+/* Animasi untuk tombol dan ikon sosial media */
+.social-icons a {
+  font-size: 18px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+  transform: scale(1.1);
+}
+
+/* Style untuk tombol aksi */
+.btn {
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #4d8e0f; /* Darker green when hovered */
+  transform: scale(1.05); /* Slightly increase size */
+}
+
+/* Penataan untuk icon sosial media */
+.social-icons i {
+  font-size: 20px;
+  margin-right: 8px;
+}
+
+/* Style tambahan untuk tombol sosial media */
+.social-icons a {
+  background-color: black;
+  border: 1px solid #ffffff;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+}
+
+.social-icons a:hover {
+  background-color: #61a707fb;
+  color: #fff;
+  border-color: #61a707fb;
+}
+
+/* Menata Jumbotron agar pada layar besar teks di kanan dan tombol sosial media di kiri */
+.jumbotron {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Menyelaraskan konten ke kiri */
+  justify-content: center;
+  text-align: left;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: flex-end; /* Posisi icon sosial media ke kanan */
+  width: 100%;
+  margin-top: 20px;
+  position: relative; /* Pastikan posisi tombol sosial media bisa diatur */
+  z-index: 9999; /* Atur z-index agar tombol berada di atas elemen lain */
+}
+
+/* Media Query untuk layar kecil (responsive) */
+@media (max-width: 768px) {
+  .jumbotron {
+    text-align: center; /* Menyelaraskan teks dan tombol di tengah pada layar kecil */
+    align-items: center;
+  }
+
+  .social-icons {
+    justify-content: center; /* Menyelaraskan icon sosial media di tengah pada layar kecil */
+  }
+
+  .social-icons a {
+    margin: 10px; /* Menambahkan jarak antara tombol sosial media */
+  }
+
+  .btn {
+    width: 100%; /* Tombol akan menjadi lebar penuh pada layar kecil */
+  }
+}
+
+/* Media Query untuk layar lebih besar (lebar) */
+@media (min-width: 769px) {
+  .social-icons {
+    justify-content: flex-end; /* Tombol sosial media berada di kanan pada layar besar */
+  }
+}
+
+#myprojects {
+  background-color: #e2edff;
+}
+
+section {
+  padding-top: 5rem;
+}
+
+.card-text {
+  color: black;
+}
+/* ANIMATED X */
+.navbar-toggle.x .icon-bar:nth-of-type(1) {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transform-origin: 10% 10%;
+  -ms-transform-origin: 10% 10%;
+  transform-origin: 10% 10%;
+}
+
+.navbar-toggle.x .icon-bar:nth-of-type(2) {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.navbar-toggle.x .icon-bar:nth-of-type(3) {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-transform-origin: 10% 90%;
+  -ms-transform-origin: 10% 90%;
+  transform-origin: 10% 90%;
+}
+
+/* ANIMATED X COLLAPSED */
+.navbar-toggle.x.collapsed .icon-bar:nth-of-type(1) {
+  -webkit-transform: rotate(0);
+  -ms-transform: rotate(0);
+  transform: rotate(0);
+}
+
+.navbar-toggle.x.collapsed .icon-bar:nth-of-type(2) {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.navbar-toggle.x.collapsed .icon-bar:nth-of-type(3) {
+  -webkit-transform: rotate(0);
+  -ms-transform: rotate(0);
+  transform: rotate(0);
+}
+/* END ANIMATED X */
+
+/* fade */
+h1 {
+  color: green;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+}
+body {
+  box-sizing: inherit;
+  color: #fff !important;
+  min-height: 2000px;
+  background-image: url(./Img/background.jpg);
+}
+
+h1 {
+  margin-top: 0;
+  text-align: center;
+  font-weight: 600;
+  font-size: large;
+}
+
+h5 {
+  color: black;
+}
+
+p {
+  padding: 12px;
+  text-align: left;
+  padding-left: 10%;
+  width: 80%;
+}
+
+.carousel {
+  margin-top: 10%;
+  width: 100%;
+  background-color: black;
+}
+/* end fade */
