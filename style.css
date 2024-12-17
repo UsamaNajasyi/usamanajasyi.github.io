@@ -1,14 +1,14 @@
 /* Menambahkan animasi latar belakang bergerak */
 .background-animation {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: url('Img/abstract-background.jpg') no-repeat center center;
+  background: url('./Img/src/0e39c256714a4b7c0299323a82701647.jpg') no-repeat center center;
   background-size: cover;
   opacity: 0.1;
-  animation: moveBackground 20s linear infinite;
+  animation: moveBackground 10s linear infinite;
 }
 
 @keyframes moveBackground {
@@ -18,16 +18,6 @@
   100% {
     background-position: 100% 100%;
   }
-}
-
-/* Animasi untuk tombol dan ikon sosial media */
-.social-icons a {
-  font-size: 18px;
-  transition: transform 0.3s ease-in-out;
-}
-
-.social-icons a:hover {
-  transform: scale(1.1);
 }
 
 /* Style untuk tombol aksi */
@@ -53,15 +43,18 @@
   color: white;
   padding: 10px 15px;
   text-align: center;
+  font-size: 18px;
+  transition: transform 0.3s ease-in-out;
 }
 
 .social-icons a:hover {
   background-color: #61a707fb;
   color: #fff;
   border-color: #61a707fb;
+  transform: scale(1.1);
 }
 
-/* Menata Jumbotron agar pada layar besar teks di kanan dan tombol sosial media di kiri */
+/* Menata Jumbotron agar pada layar besar teks di kanan dan tombol sosial media di kanan */
 .jumbotron {
   display: flex;
   flex-direction: column;
@@ -72,11 +65,11 @@
 
 .social-icons {
   display: flex;
-  justify-content: flex-end; /* Posisi icon sosial media ke kanan */
-  width: 100%;
-  margin-top: 20px;
+  justify-content: center; /* Posisi icon sosial media ke kanan */
+  width: 70%;
+  margin-top: 30px;
   position: relative; /* Pastikan posisi tombol sosial media bisa diatur */
-  z-index: 9999; /* Atur z-index agar tombol berada di atas elemen lain */
+  z-index: 999; /*Atur z-index agar tombol berada di atas elemen lain*/
 }
 
 /* Media Query untuk layar kecil (responsive) */
@@ -102,7 +95,7 @@
 /* Media Query untuk layar lebih besar (lebar) */
 @media (min-width: 769px) {
   .social-icons {
-    justify-content: flex-end; /* Tombol sosial media berada di kanan pada layar besar */
+    justify-content: start; /* Tombol sosial media berada di kanan pada layar besar */
   }
 }
 
@@ -115,8 +108,13 @@ section {
 }
 
 .card-text {
-  color: black;
+  color: rgb(236, 235, 235);
 }
+
+.card-body {
+  background-color: #202324e5;
+}
+
 /* ANIMATED X */
 .navbar-toggle.x .icon-bar:nth-of-type(1) {
   -webkit-transform: rotate(45deg);
@@ -182,7 +180,7 @@ html {
 }
 body {
   box-sizing: inherit;
-  color: #fff !important;
+  color: #130202 !important;
   min-height: 2000px;
   background-image: url(./Img/background.jpg);
 }
@@ -192,10 +190,11 @@ h1 {
   text-align: center;
   font-weight: 600;
   font-size: large;
+  color: greenyellow;
 }
 
 h5 {
-  color: black;
+  color: rgb(247, 243, 243);
 }
 
 p {
