@@ -74,21 +74,55 @@
 
 /* Media Query untuk layar kecil (responsive) */
 @media (max-width: 768px) {
-  .jumbotron {
-    text-align: center; /* Menyelaraskan teks dan tombol di tengah pada layar kecil */
-    align-items: center;
+  #jumbotron {
+    display: flex; /* Menggunakan Flexbox */
+    flex-direction: column; /* Atur kolom untuk h1 dan p */
+    align-items: center; /* Pusatkan semua elemen */
+    justify-content: center; /* Pusatkan elemen secara vertikal */
+    text-align: center; /* Teks rata tengah */
+    padding: 100px 1rem;
   }
 
-  .social-icons {
-    justify-content: center; /* Menyelaraskan icon sosial media di tengah pada layar kecil */
+  #jumbotron h1 {
+    font-size: 4rem;
+    margin: 0;
+    padding-bottom: 1rem;
   }
 
-  .social-icons a {
-    margin: 10px; /* Menambahkan jarak antara tombol sosial media */
+  #jumbotron p {
+    display: flex; /* Terapkan Flexbox */
+    justify-content: center; /* Pusatkan konten */
+    align-items: center; /* Selaraskan secara vertikal */
+    gap: 10px; /* Beri jarak antar elemen horizontal */
+    white-space: nowrap; /* Paksa teks tetap dalam satu baris */
+    overflow: hidden; /* Potong teks jika terlalu panjang */
+    text-overflow: ellipsis; /* Tambahkan "..." jika teks terpotong */
+    margin: 0; /* Hilangkan margin default */
+    font-size: 1rem; /* Ukuran font tetap besar */
+    width: auto; /* Pastikan lebar disesuaikan dengan konten */
   }
 
-  .btn {
-    width: 100%; /* Tombol akan menjadi lebar penuh pada layar kecil */
+  #about {
+    padding: 2rem 1rem; /* Kurangi padding */
+    text-align: center; /* Teks di tengah */
+  }
+
+  #about .row.text-center.mb-3 h2 {
+    font-size: 2rem; /* Sesuaikan ukuran judul */
+    text-align: center; /* Tengah */
+  }
+
+  #about p {
+    text-align: center; /* Deskripsi di tengah */
+    font-size: 1rem; /* Ukuran font lebih kecil */
+    padding-left: 0; /* Hilangkan padding kiri */
+    width: 100%; /* Full width */
+  }
+
+  #about img {
+    width: 150px; /* Ukuran gambar lebih kecil */
+    height: auto;
+    margin: 1rem auto; /* Gambar di tengah dengan margin */
   }
 }
 
@@ -100,7 +134,7 @@
 }
 
 #myprojects {
-  background-color: #e2edff;
+  background-color: #212326fa;
 }
 
 section {
@@ -112,7 +146,7 @@ section {
 }
 
 .card-body {
-  background-color: #202324e5;
+  background-color: #141414e5;
 }
 
 /* ANIMATED X */
