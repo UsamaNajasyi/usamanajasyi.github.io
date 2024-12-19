@@ -112,55 +112,104 @@
           </div>
         </div>
         <div class="row justify-content-center">
+          <!-- Project 1 -->
           <div class="col-md-4 mb-3" data-aos="fade-up" data-aos-duration="5000">
             <div class="card" style="border-style: none">
-              <img src="/Img/Projects/1.png" class="card-img-top" alt="Project 1" />
+              <img
+                src="/Img/Projects/1.png"
+                class="card-img-top project-image"
+                alt="Project 1"
+                data-title="Project Manager"
+                data-description="Procurement status reminder management module, This project was created for my father"
+                data-image="/Img/Projects/1.png" />
               <div class="card-body">
                 <h5>Project Manager</h5>
-                <p class="card-text">Application for managing incoming projects</p>
+                <p class="card-text">Application for managing projects | Vb.Net</p>
               </div>
             </div>
           </div>
+          <!-- Project 2 -->
           <div class="col-md-4 mb-3" data-aos="fade-up" data-aos-duration="5100">
             <div class="card" style="border-style: none">
-              <img src="/Img/Projects/2.png" class="card-img-top" alt="Project 2" />
+              <img
+                src="/Img/Projects/2.png"
+                class="card-img-top project-image"
+                alt="Project 2"
+                data-title="QrCode Converter"
+                data-description="Application in Indonesian lesson of bibliography book of short story collection public high school 7 class 10 IPA 2  based QrCode"
+                data-image="/Img/Projects/2.png" />
               <div class="card-body">
                 <h5>QrCode Converter</h5>
-                <p class="card-text">Text to QrCode converter application</p>
+                <p class="card-text">bibliography book QrCode base | Vb.Net</p>
               </div>
             </div>
           </div>
+          <!-- Project 3 -->
           <div class="col-md-4 mb-3" data-aos="fade-up" data-aos-duration="5200">
             <div class="card" style="border-style: none">
-              <img src="/Img/Projects/3.png" class="card-img-top" alt="Project 3" />
+              <img
+                src="/Img/Projects/3.png"
+                class="card-img-top project-image"
+                alt="Project 3"
+                data-title="Animal Management Application"
+                data-description="Animal Management Application designed to streamline animal data management, food stock, and list of the animal "
+                data-image="/Img/Projects/3.png" />
               <div class="card-body">
                 <h5>Animal Management Application</h5>
-                <p class="card-text">Pet management application includes animal data and animal feed</p>
+                <p class="card-text">Pet management application | Vb.Net</p>
               </div>
             </div>
           </div>
+          <!-- Project 4 -->
           <div class="col-md-4 mb-3" data-aos="fade-up" data-aos-duration="5200">
             <div class="card" style="border-style: none">
-              <img src="/Img/Projects/4.jpg" class="card-img-top" alt="Project 3" />
+              <img
+                src="/Img/Projects/4.jpg"
+                class="card-img-top project-image"
+                alt="Project 4"
+                data-title="Basic Arduino"
+                data-description="Among them fish feeding robot,proximity sensor,and laptop temperature monitor"
+                data-image="/Img/Projects/4.jpg" />
               <div class="card-body">
-                <h5>Arduino ultrasonic sensor</h5>
-                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur, eum?</p>
+                <h5>Basic Arduino</h5>
+                <p class="card-text">Basic Arduino skill | Arduino</p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- End Project -->
+
+    <!-- Modal Box -->
+    <div class="modal" id="item-detail-modal">
+      <div class="modal-container">
+        <div class="modal-content">
+          <h3 id="modal-title">Project Title</h3>
+          <button class="close-icon" id="close-modal"><i data-feather="x">x</i></button>
+          <div class="modal-body">
+            <img src="./Img/Projects/1.png" alt="Project Image" id="modal-image" />
+            <div class="product-content">
+              <p id="modal-description">Project Description</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Box item Details end -->
+
+    <footer style="color: white">
+      <p>&copy; 2024 Usama Najasyi | still under development</p>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
     <!-- script js -->
-    <script src="/index.js"></script>
+    <script src="./js/index.js"></script>
 
     <!-- AOS Script -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="./index.js"></script>
+
     <script>
       AOS.init();
     </script>
